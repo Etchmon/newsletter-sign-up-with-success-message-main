@@ -251,10 +251,11 @@ form > button:hover {
     .image-container {
         grid-column: 2;
         background-image: url("./assets/images/illustration-sign-up-desktop.svg");
-        background-size: auto;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 1rem;
+        margin: 1rem;
     }
 
     img {
