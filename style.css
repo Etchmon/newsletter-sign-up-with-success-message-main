@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+:root {
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--charcoal-grey);
+    min-height: 100vh;
+    color: var(--dark-slate-grey);
+    font-family: Roboto-Regular;
+    font-weight: 400;
+}
+
+card {
+    height: 100vh;
+    display: grid;
+    background-color: var(--white);
+    grid-template-rows: 33% min-content;
+}
+
+.image-container {
+    max-width: 100vw;
+    grid-row: 1;
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 1rem 1rem;
+}
+
+img {
+    min-width: 100vw;
+    max-width: 100%;
+    display: block;
+}
+
+/* FORM CSS */
+
+.form-container {
+    background-color: var(--white);
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.form-container>h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.form-container>ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.form-container>ul>li {
+    position: relative;
+    padding-left: 40px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.form-container>ul>li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("./assets/images/icon-list.svg");
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+form>label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+form>input {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0.2px solid var(--grey);
+    margin-bottom: 1rem;
+}
+
+form>button {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.success {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 2rem;
+        height: 65vh;
+        padding-left: 2rem;
+        gap: 2rem;
+    }
+
+    .form-container {
+        grid-row: 1;
+        font-weight: 400;
+        width: 85%;
+        padding: 0;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .form-container>h1 {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    .form-container>ul>li {
+        white-space: nowrap;
+    }
+
+    .image-container {
+        grid-column: 2;
+        background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 1rem;
+    }
+
+    img {
+        height: 100%;
+        min-width: 100%;
+    }
+}
