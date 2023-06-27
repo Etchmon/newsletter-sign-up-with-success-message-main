@@ -13,6 +13,8 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
+    --tomato: hsl(4, 100%, 67%);
+    --gradient: linear-gradient(to left, #FF3E82,#FA8F46);
 }
 
 .attribution {
@@ -26,6 +28,10 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+body, p, h1, h2, h3 {
+    margin: 0;
 }
 
 body {
@@ -111,6 +117,9 @@ form>label {
     font-size: 0.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 form>input {
@@ -118,6 +127,16 @@ form>input {
     border-radius: 8px;
     border: 0.2px solid var(--grey);
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+form>input.invalid::placeholder {
+    color: var(--tomato);
+}
+
+form>input.invalid {
+    background-color: #ffdfd6;
+    border-color: var(--tomato);
 }
 
 form>button {
@@ -129,6 +148,17 @@ form>button {
     font-weight: 700;
     font-size: 1rem;
     white-space: nowrap;
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-image: linear-gradient(to right, #FF3E82, #FA8F46);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 8px rgba(0, 0, 0, 0.15);
+}
+
+#error {
+    display: none;
+    color: var(--tomato);
 }
 
 .success {

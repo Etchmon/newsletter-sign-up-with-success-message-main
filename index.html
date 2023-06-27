@@ -17,20 +17,11 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <script src="./app.js"></script>
   </head>
   <body>
     <!-- Sign-up form start -->
     <card>
-      <div class="image-container">
-        <!-- <img
-          src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="image"
-          id="img"
-        /> -->
-      </div>
+      <div class="image-container"></div>
       <div class="form-container">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -39,9 +30,19 @@
           <li>Measuring to ensure updates are success</li>
           <li>And much more!</li>
         </ul>
-        <form action="submit">
-          <label for="email">Email address</label>
-          <input type="email" placeholder="email@company.com" />
+        <form id="form">
+          <label for="email"
+            >Email address
+            <p id="error">Valid email required</p>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+            min="1"
+            max="50"
+          />
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
       </div>
@@ -65,3 +66,4 @@
     </div>
   </body>
 </html>
+<script src="./app.js"></script>
