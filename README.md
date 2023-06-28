@@ -1,6 +1,10 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv).
+
+### Screenshot
+
+![Screenshot](./assets//images/Frontend%20Mentor%20_%20Newsletter%20sign-up%20form%20with%20success%20message.gif)
 
 ## Table of contents
 
@@ -10,8 +14,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,10 +28,6 @@ Users should be able to:
   - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-
-### Screenshot
-
-![Screenshot](./assets//images/Frontend%20Mentor%20_%20Newsletter%20sign-up%20form%20with%20success%20message.gif)
 
 ### Links
 
