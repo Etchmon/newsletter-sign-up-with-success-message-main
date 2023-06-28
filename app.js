@@ -15,6 +15,7 @@ const Validator = (() => {
         const email = form.elements.email;
         const emailValue = form.elements.email.value.trim();
         const errorMsg = document.getElementById('error');
+        const user = document.getElementById('user');
 
         // Perform validations
         if (!isEmailValid(emailValue)) {
@@ -28,6 +29,7 @@ const Validator = (() => {
         errorMsg.style.display = 'none';
         success.style.top = '0';
         card.style.display = 'none';
+        user.textContent = emailValue;
 
         console.log('Success!');
 
